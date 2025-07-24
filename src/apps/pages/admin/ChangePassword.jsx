@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Layout from "../Layout"
-import { Eye, EyeOff, Shield, CheckCircle, AlertCircle, ArrowLeft, Lock, Check, X } from "lucide-react"
+import { Eye, EyeOff, Shield, CheckCircle, AlertCircle, Lock, Check, X } from "lucide-react"
 import SweetAlertService from "../../helper/sweetalertService"
 import ServiceUser from "../../api/service/User.service"
 import { useNavigate, useParams } from "react-router-dom"
