@@ -1,14 +1,14 @@
 import { jwtDecode } from 'jwt-decode'
 import { Navigate, Outlet } from 'react-router-dom'
 
-const RequireAuth = ( redirectPath ) => {
+const RequireAuth = ({ redirectPath }) => {
   const isAuthenticate = localStorage.getItem('access-token')
 
-  if(!isAuthenticate){
+  if (!isAuthenticate) {
     return <Navigate to={redirectPath} />
   }
 
-  return <Outlet/>
+  return <Outlet />
 }
 
 const RequireRole = ( {allowedRoles, redirectPath} ) => {
